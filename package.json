@@ -1,0 +1,26 @@
+{
+  "name": "cspb3308-project-bewell",
+  "version": "1.0.0",
+  "description": "<ul> <li>Amanda Killen</li> <li>Anthony Pearo</li> <li>Julie Kirkpatrick</li> <li>Sabine Hollatz</li> </ul>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SHollatz/CSPB3308-Project-BeWell.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SHollatz/CSPB3308-Project-BeWell/issues"
+  },
+  "homepage": "https://github.com/SHollatz/CSPB3308-Project-BeWell#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  }
+}
