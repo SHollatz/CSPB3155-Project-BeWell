@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Be Well</title>
+  <meta charset="UTF-8">
+  <meta name="authors" content="">
+  <title>Be Well</title>
 </head>
 <body>
 
@@ -28,7 +30,7 @@
   <input type="radio" name="choice" value="Other"> Other <br><br>
 </form>
 
-<button onclick="submitAnswer()">Submit</button>
+<button id="submitAnswer" onclick="submitAnswer()">Submit</button>
 
 <script>
 function submitAnswer() {
@@ -36,6 +38,8 @@ function submitAnswer() {
     document.getElementById("myForm").submit();
 }
 </script>
+<script src='./entry.js' type='text/javascript'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
 </body>
 </html>

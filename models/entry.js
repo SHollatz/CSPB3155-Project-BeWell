@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
   let Entry = sequelize.define("Entry", {
-    firstName: {
+    firstname: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
@@ -11,7 +11,7 @@ module.exports = function(sequelize, DataTypes) {
         }
       }
     },
-    lastName: {
+    lastname: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {

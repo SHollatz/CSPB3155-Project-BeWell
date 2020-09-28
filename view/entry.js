@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("inside entry.js 1")
 
     let newEntry = {
-      firstName: document.getElementById("fame").value,
-      lastName: document.getElementById("lname").value
+      firstname: document.getElementById("fname").value,
+      lastname: document.getElementById("lname").value
     }
 
     console.log("newEntry: ", newEntry);
