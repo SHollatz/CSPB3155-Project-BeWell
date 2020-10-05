@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family:verdana;
+    background-image: url(https://storage.needpix.com/rsynced_images/jet-aircraft-in-flight.jpg)
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+li.home {
+float: left;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+</style>
+<title>
+BeWell</title>
+</head>
+<body>
+
+<ul>
+  
+  <li><a href="#About">About</a></li>
+  <li><a href="#Report">Report</a></li>
+  <li><a href="#FlightData">Flight Data</a></li>
+  <li class = "home"><a href="#Home">Home</a></li>
+</ul>
+
+<div class = "center">
+<form action="/action_page.php">
+  <label for="flight">Find Your Flight</label><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="Flight Number, Airline">
+  <input type="submit">
+</form>
+</div>
+
+
+</body>
+</html>

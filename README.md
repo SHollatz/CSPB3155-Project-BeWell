@@ -1,7 +1,7 @@
 ### Project: Be Well!
 #### Team members' names
 <ul>
-<li>Amanda Killen</li>
+<li>Amanda Killeen</li>
 <li>Anthony Pearo</li>
 <li>Julie Kirkpatrick</li>
 <li>Sabine Hollatz</li>
