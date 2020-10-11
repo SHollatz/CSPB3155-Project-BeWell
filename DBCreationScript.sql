@@ -1,0 +1,34 @@
+CREATE DATABASE bewell_db;
+
+USE bewell_db;
+
+CREATE TABLE IF NOT EXISTS users
+(userID INTEGER NOT NULL AUTO_INCREMENT
+, firstname VARCHAR(45) NOT NULL
+, lastname VARCHAR(45) NOT NULL
+, userSubmissionDate DATE NOT NULL
+, PRIMARY KEY (userID)
+);
+
+CREATE TABLE IF NOT EXISTS illness
+(illnessID INTEGER NOT NULL AUTO_INCREMENT
+, illness VARCHAR(45) NOT NULL
+, PRIMARY KEY (illnessID)
+);
+
+CREATE TABLE IF NOT EXISTS user_illness
+(userID INTEGER NOT NULL
+, illnessID INTEGER NOT NULL
+, FOREIGN KEY (userID) REFERENCES users(userID)
+, FOREIGN KEY (illnessID) REFERENCES illness(illnessID)
+);
+
+CREATE TABLE IF NOT EXISTS flights
+(flightID INTEGER NOT NULL AUTO_INCREMENT
+, airline VARCHAR(45) NOT NULL
+, flightNumber VARCHAR(45) NOT NULL
+, flightDate DATE NOT NULL
+, illnessID INTEGER NOT NULL
+, PRIMARY KEY (flightID)
+, FOREIGN KEY (illnessID) REFERENCES illness(illnessID)
+);
