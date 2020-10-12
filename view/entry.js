@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       firstname: document.getElementById("fname").value,
       lastname: document.getElementById("lname").value,
       //date not working yet
-      //date: document.getElementById("date").value,
+      date: document.getElementById("date").value,
       airline: document.getElementById("airline").value,
       //checkboxes ?? values for these?
       /*
