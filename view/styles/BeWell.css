@@ -1,0 +1,117 @@
+body {
+    font-family: "Helvetica","Arial",sans-serif;
+    background-image: url(https://storage.needpix.com/rsynced_images/jet-aircraft-in-flight.jpg)
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+li.home {
+float: left;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.ribbon {
+    width: 100%;
+    height: 40vh;
+    /* background-color: #3F51B5; */
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+  }
+  
+  .main {
+    margin-top: -35vh;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+  }
+  
+  .header .mdl-layout__header-row {
+    padding-left: 40px;
+  }
+  
+  .container {
+    max-width: 1600px;
+    width: calc(100% - 16px);
+    margin: 0 auto;
+  }
+  
+  .content {
+    border-radius: 2px;
+    padding: 80px 56px;
+    margin-bottom: 80px;
+  }
+  
+  .layout.is-small-screen .content {
+    padding: 20px 28px;
+  }
+  
+  .content h3 {
+    margin-top: 48px;
+  }
+  
+  .footer {
+    padding-left: 40px;
+  }
+  
+  .footer .mdl-mini-footer--link-list a {
+    font-size: 13px;
+  }
+  .left{
+      text-align: left;
+  }
+
+
+  .right{
+    text-align: right;
+  }
+
+  .form-header{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .fullwidth{
+      width: 100%
+  }
+
+  .mdl-data-table td {
+    text-align: left !important;
+}
+
+    .mdl-data-table th {
+    text-align: left !important;
+}
+  
