@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("submitAnswer").addEventListener('click', event => {
     console.log("inside entry.js 1")
 
+    //update so it has all the fields on the form
     let newEntry = {
       //text entries
       firstname: document.getElementById("fname").value,
