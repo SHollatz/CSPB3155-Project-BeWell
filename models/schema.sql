@@ -2,10 +2,18 @@ CREATE DATABASE IF NOT EXISTS bewell_db;
 
 USE bewell_db;
 
+DROP TABLE IF EXISTS submissionSymptom;
+DROP TABLE IF EXISTS submission;
+DROP TABLE IF EXISTS symptom;
+DROP TABLE IF EXISTS flight;
+DROP TABLE IF EXISTS illness;
+DROP TABLE IF EXISTS `user`;
+
 CREATE TABLE IF NOT EXISTS `user`
 (userID INTEGER NOT NULL AUTO_INCREMENT
 , firstname VARCHAR(45) NOT NULL
 , lastname VARCHAR(45) NOT NULL
+, email VARCHAR(100) NOT NULL
 , PRIMARY KEY (userID)
 );
 
@@ -36,7 +44,7 @@ CREATE TABLE IF NOT EXISTS submission
 , illnessID INTEGER NOT NULL
 , submissionDate DATE NOT NULL
 , PRIMARY KEY (submissionID)
-, FOREIGN KEY (userID) REFERENCES users(userID)
+, FOREIGN KEY (userID) REFERENCES `user`(userID)
 , FOREIGN KEY (flightID) REFERENCES flight(flightID)
 , FOREIGN KEY (illnessID) REFERENCES illness(illnessID)
 );
