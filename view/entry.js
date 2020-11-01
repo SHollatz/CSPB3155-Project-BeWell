@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     console.log("newEntry: ", newEntry);
-    $.ajax("/api/user/", {
+    $.ajax("/api/user/", { //this will need to be updated with the correct route
       method: "POST",
       data: newEntry,
       success: function(res) {
