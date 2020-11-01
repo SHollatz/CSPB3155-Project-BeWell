@@ -18,17 +18,29 @@ VALUES (1, 'COVID-19')
     , (3, 'Influenza-B')
     , (4, 'Other');
 
-INSERT INTO flight (flightID, flightDate, airline, flightNumber)
-VALUES (1, '2020-10-20', 'Delta', 'DL1')  -- JFK - LHR
-    , (2, '2020-10-24', 'Delta', 'DL1')
-    , (3, '2020-10-23', 'Delta', 'DL1')
-    , (4, '2020-10-10', 'United', 'UA2221') -- DEN - PDX
-    , (5, '2020-09-01', 'American', 'AA1733') -- MCI - DFW
-    , (6, '2020-08-15', 'Air New Zealand', 'NZ5') -- LAX - AKL
-    , (7, '2020-08-16', 'Air New Zealand', 'NZ5')
-    , (8, '2020-10-11', 'United', 'UA2221')
-    , (9, '2020-09-02', 'American', 'AA1733')
-    , (10, '2020-09-03', 'American', 'AA1733');
+INSERT INTO airline (airlineID, airlineName)
+VALUES (1, 'Air New Zealand')
+, (2, 'Alaska Airlines')
+, (3, 'American Airlines')
+, (4, 'Delta Airlines')
+, (5, 'Frontier')
+, (6, 'Jet Blue Airlines')
+, (7, 'Quantas Airlines')
+, (8, 'Southwest Airlines')
+, (9, 'United Airlines')
+, (10, 'Virgin Atlantic Airlines');
+
+INSERT INTO flight (flightID, flightDate, airlineID, flightNumber)
+VALUES (1, '2020-10-20', 4, 'DL1')  -- JFK - LHR
+    , (2, '2020-10-24', 4, 'DL1')
+    , (3, '2020-10-23', 4, 'DL1')
+    , (4, '2020-10-10', 9, 'UA2221') -- DEN - PDX
+    , (5, '2020-09-01', 3, 'AA1733') -- MCI - DFW
+    , (6, '2020-08-15', 1, 'NZ5') -- LAX - AKL
+    , (7, '2020-08-16', 1, 'NZ5')
+    , (8, '2020-10-11', 9, 'UA2221')
+    , (9, '2020-09-02', 3, 'AA1733')
+    , (10, '2020-09-03', 3, 'AA1733');
 
 INSERT INTO symptom (symptomID, symptomName)
 VALUES (1, 'Fever')
