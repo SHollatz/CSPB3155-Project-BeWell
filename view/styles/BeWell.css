@@ -31,6 +31,11 @@ li.home {
 float: left;
 }
 
+li.filter {
+float: left;
+margin: 15px 5px 0 5px;
+}
+
 .center {
   margin: 0;
   position: absolute;
@@ -114,4 +119,3 @@ float: left;
     .mdl-data-table th {
     text-align: left !important;
 }
-  

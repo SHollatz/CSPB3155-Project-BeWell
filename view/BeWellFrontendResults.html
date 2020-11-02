@@ -8,7 +8,8 @@
 <title>
 BeWell</title>
 </head>
-<body>
+
+<body id="results_page">
 
 <ul>
   
@@ -26,6 +27,26 @@ BeWell</title>
       <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
       <div class="content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
         <h6> Here is the current status of Delta (DL1):</h6>
+		
+		<ul>
+				<li>
+                <a href = "BeWellFrontendResults.html"><span>Filter Results</span></a>
+                </li>
+				
+				
+				<li class = "filter">
+				<input type="text" name="filterAirline" id="filterAirline" value="" autocomplete="off" placeholder="Search Airline" spellcheck="false">
+				</li>
+				
+				<li class = "filter">
+				<input type="text" name="filterFightNumber" id="filterFlightNumber" value="" autocomplete="off" placeholder="Search Flight Number" spellcheck="false">
+				</li>
+				
+				
+				<li class = "filter">
+				<input type="text" name="filterStatus" id="filterStatus" value="" autocomplete="off" placeholder="Search Status" spellcheck="false">
+        </li>     
+     </ul>
         <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp fullwidth">
           <thead>
             <tr>
@@ -37,8 +58,8 @@ BeWell</title>
           </thead>
           <tbody>
             <tr>
-              <td class="mdl-data-table__cell--non-numeric left">Delta</td>
-              <td class="left"> DL1</td>
+              <td id="testGetDummy1" class="mdl-data-table__cell--non-numeric left">Delta</td>
+              <td id="testGetDummy2" class="left"> DL1</td>
               <td>09/25/2020</td>
               <td>Red</td>
             </tr>
@@ -79,5 +100,7 @@ BeWell</title>
     </div>
   </main>
 </div></div>
+<script src='./fillInResults.js' type='text/javascript'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 </body>
 </html>

@@ -34,29 +34,47 @@
       <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
       <div class="content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
         <h4> Report an Illness & Symptoms: </h4>
-        <form action="/action_page.php">
+        <form id="submissionForm">
           <div class="mdl-textfield mdl-js-textfield">
             <input class="mdl-textfield__input" type="text" id="fname">
             <label class="mdl-textfield__label" for="fname">First Name</label>
           </div>
-
           <div class="mdl-textfield mdl-js-textfield">
             <input class="mdl-textfield__input" type="text" id="lname">
             <label class="mdl-textfield__label" for="lname">Last Name</label>
           </div>
           <br>
+		  <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="email">
+            <label class="mdl-textfield__label" for="email">Email</label>
+          </div>
+		  
+		  <br>
+		  
           <div class="mdl-textfield mdl-js-textfield">
             <input class="mdl-textfield__input" type="date" id="date">
-            <!--     <label class="mdl-textfield__label" for="date">MM/DD/YYY</label> -->
+        <!--     <label class="mdl-textfield__label" for="date">MM/DD/YYY</label> -->
           </div>
           <br>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" id="airline">
-            <label class="mdl-textfield__label" for="lname">Airline</label>
-          </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <select class="mdl-textfield__input" id="airline" name="airline">
+                    <option value="">Select an Airline:</option>
+                    <option value="1">Air New Zealand</option>
+                    <option value="2">Alaska Airlines</option>
+                    <option value="3">American Airlines</option>
+                    <option value="4">Delta Airlines</option>
+                    <option value="5">Frontier Airlines</option>
+                    <option value="6">Jet Blue Airlines</option>
+                    <option value="7">Quantas Airlines</option>
+                    <option value="8">Southwest Airlines</option>
+                    <option value="9">United Airlines</option>
+                    <option value="10">Virgin Atlantic Airlines</option>
+                </select>
+            </div>
+
           <div class="mdl-textfield mdl-js-textfield">
             <input class="mdl-textfield__input" type="text" id="flightnumber">
-            <label class="mdl-textfield__label" for="lname">Flight Number</label>
+            <label class="mdl-textfield__label" for="flightnumber">Flight Number</label>
           </div>
           <br>
           <div class="form-header">
@@ -65,46 +83,46 @@
             <br>
           </div>
           <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="sympt1">
-            <input type="checkbox" id="sympt1" class="mdl-checkbox__input">
+            <input type="checkbox" id="sympt1" class="mdl-checkbox__input" name="symptom" value="1">
             <span class="mdl-checkbox__label">Fever</span>
           </label>
-          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="sympt2">
-            <input type="checkbox" id="sympt2" class="mdl-checkbox__input">
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="sympt2">
+            <input type="checkbox" id="sympt2" class="mdl-checkbox__input" name="symptom" value="2">
             <span class="mdl-checkbox__label">Cough</span>
           </label>
-          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="sympt3">
-            <input type="checkbox" id="sympt3" class="mdl-checkbox__input">
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="sympt3">
+            <input type="checkbox" id="sympt3" class="mdl-checkbox__input" name="symptom" value="3">
             <span class="mdl-checkbox__label">Headache</span>
           </label>
           <br>
           <br>
           <div class="form-header">
-            Select a diagnosis:
-            <br>
-            <br>
+          Select a diagnosis:
+          <br>
+          <br>
           </div>
           <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="COVID-19">
-            <input type="radio" id="COVID-19" class="mdl-radio__button" name="choice" value="COVID-19">
+            <input type="radio" id="COVID-19" class="mdl-radio__button" name="illness" value="1">
             <span class="mdl-radio__label">COVID-19</span>
           </label>
           <br>
           <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Influenza-A">
-            <input type="radio" id="Influenza-A" class="mdl-radio__button" name="choice" value="Influenza-A">
+            <input type="radio" id="Influenza-A" class="mdl-radio__button" name="illness" value="2">
             <span class="mdl-radio__label">Influenza-A</span>
           </label>
           <br>
           <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Influenza-B">
-            <input type="radio" id="Influenza-B" class="mdl-radio__button" name="choice" value="Influenza-B">
+            <input type="radio" id="Influenza-B" class="mdl-radio__button" name="illness" value="3">
             <span class="mdl-radio__label">Influenza-B</span>
           </label>
           <br>
           <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Other">
-            <input type="radio" id="Other" class="mdl-radio__button" name="choice" value="Other">
+            <input type="radio" id="Other" class="mdl-radio__button" name="illness" value="4">
             <span class="mdl-radio__label">Other</span>
           </label>
           <br>
           <div class="right">
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="submitAnswer" onclick="submitAnswer()">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="submitAnswer">
               Submit
             </button>
           </div>
@@ -119,4 +137,3 @@
 
 </body>
 </html>
-
