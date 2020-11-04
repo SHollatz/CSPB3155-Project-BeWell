@@ -2,7 +2,7 @@
      window.onload = (event) => {
         console.log("page is fully loaded")
         $.ajax({
-          url: "api/user/",
+          url: "api/entry/",
           method: "GET",
           dataType: "json",
           success: function(res) {

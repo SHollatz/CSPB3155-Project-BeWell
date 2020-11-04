@@ -39,11 +39,11 @@ module.exports = function (sequelize, DataTypes) {
         date: {
             type: DataTypes.DATE,
             allowNull: false,
-            validate: {
-                isDate: true,
-                msg:
-                    "Please enter a valid date."
-                }
+            // validate: {
+            //     //isDate: true,
+            //     msg:
+            //         "Please enter a valid date."
+            //     }
             },
 
         airline: {
@@ -80,7 +80,7 @@ module.exports = function (sequelize, DataTypes) {
         },
         symptom_name: {
             type: DataTypes.STRING,
-            allowNull: false,
+            //allowNull: false,
             validate: {
                 len: {
                     args: [1, 255],
