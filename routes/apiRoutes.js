@@ -5,9 +5,9 @@ var db = require("../models");
 module.exports = function(app) {
   app.get("/api/entry", function(req, res) {
     console.log("inside apiRoutes, res");
-    db.User.findAll({}).then(function(dbUser) {
+    db.Entry.findAll({}).then(function(dbEntry) {
 //      console.log("inside apiRoutes, dbUser: ", dbUser);
-      res.json(dbUser);
+      res.json(dbEntry);
     });
   });
 
