@@ -1,10 +1,11 @@
 {
   "name": "cspb3308-project-bewell",
   "version": "1.0.0",
-  "description": "<ul> <li>Amanda Killen</li> <li>Anthony Pearo</li> <li>Julie Kirkpatrick</li> <li>Sabine Hollatz</li> </ul>",
+  "description": "<ul> <li>Amanda Killeen</li> <li>Anthony Pearo</li> <li>Julie Kirkpatrick</li> <li>Sabine Hollatz</li> </ul>",
   "main": "index.js",
   "scripts": {
-    "test": "./Tests/mochaTests.js"
+    "test": "./Tests/mochaTests.js",
+    "sqltest": "jest "
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "sequelize": "^6.3.5"
   },
   "devDependencies": {
-    "chai": "^4.2.0"
+    "chai": "^4.2.0",
+    "jest": "^24.9.0"
   }
 }
