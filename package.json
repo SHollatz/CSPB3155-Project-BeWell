@@ -4,8 +4,7 @@
   "description": "<ul> <li>Amanda Killeen</li> <li>Anthony Pearo</li> <li>Julie Kirkpatrick</li> <li>Sabine Hollatz</li> </ul>",
   "main": "index.js",
   "scripts": {
-  "test": "jest"
-  "start": "server.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
