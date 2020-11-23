@@ -1,12 +1,48 @@
-# User Acceptance Tests - BeWell
+# Testing - BeWell
 
+### Project Information
+
+- Team Name: BeWell (aka Awk)
+- Team Members: Julie Fitzpatrick, Sabine Hollatz, Amanda Killeen, and Tony Pearo
+
+
+## Dependencies
+In order to run our tests, you will need to install the following dependencies:
+- [node.js](https://nodejs.org/en/)
+- [MySQL](https://www.mysql.com/)
+    - Use the password in /config/config.json "test" to configure your instance of MySQL or update the password in the config file to your instance's password.
+- [npm](https://www.npmjs.com/get-npm)
+
+### Setup
+1. Clone the repository into a directory
+    
+    ```git clone https://github.com/SHollatz/CSPB3308-Project-BeWell.git```
+2. Run ```npm install``` in the CLI to ensure you have dependencies installed, including jest testing framework.
+
+## Automated Unit Tests
+There are 4 sets of unit tests:
+- *sequelizeTests*: tests Sequelize functionality against BeWell_db.
+- *checkEmail*: tests email input in submission form and that it adheres to validation requirements.
+- *checkTextInput*: tests text input in submission form and that it adheres to validation requirements.
+- *serverTests*: tests that the receipt of a valid 200 status code response when a request is sent to server to make sure that it is functioning.
+
+### Running Tests
+1. In your MySQL instance, ensure you are starting with a clean database:
+       
+        DROP DATABASE bewell_db;
+        CREATE DATABASE bewell_db;
+2. Change password in config.json to your local settings.
+3. In a second terminal start the server with ```node server.js```
+4. In the directory where you cloned the repository, input ```npm test``` in the CLI and the tests will run automatically.
+
+
+## User Acceptance Testing
 
 ### Pages
-
-  - Home Page
-  - Flight Data
-  - Report
-  - About
+- Home Page
+- Flight Data
+- Report
+- About
 ---
 ### Home Page
 ##### Use Case Name: Navigation Home to Flight Data
@@ -213,6 +249,7 @@
     - Need to pass the filter parameters to the page
 - Post-conditions
     - Table result empty, but resets when reloaded.
+
 ##### Use Case Name: Flight Data Flight Number - Invalid
 - Description
     - Test the table population with a Flight Number that isn't in the table.
@@ -233,6 +270,7 @@
     - Need to pass the filter parameters to the page
 - Post-conditions
     - Table result empty, but resets when reloaded.
+
 ##### Use Case Name: Flight Data Status - Invalid
 - Description
     - Test the table population with a Status that isn't in the table.

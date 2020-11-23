@@ -22,11 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     console.log("newEntry: ", newEntry);
-    $.ajax("/api/user/", { //this will need to be updated with the correct route
+    $.ajax("/api/entry/", { //this will need to be updated with the correct route
       method: "POST",
       data: newEntry,
       success: function(res) {
         console.log("success")
+        window.location.href = "BeWellFrontendResults.html?flightnumber="+$("#flightnumber").val()
       },
       error: function(err) {
         console.log("In entry.js, post, an error occurred: ", err);

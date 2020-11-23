@@ -1,32 +1,50 @@
 
-var db = require("../models/Multi-Tables");
+var db = require("../models");
 //console.log("inside apiRoutes, db: ", db);
 
 module.exports = function(app) {
-  app.get("/api/user", function(req, res) {
+  app.get("/api/entry", function(req, res) {
     console.log("inside apiRoutes, res");
-    db.User.findAll({}).then(function(dbUser) {
+    db.Entry.findAll({}).then(function(dbEntry) {
 //      console.log("inside apiRoutes, dbUser: ", dbUser);
-      res.json(dbUser);
+      res.json(dbEntry);
+    });
+  });
+  // route to get results based on user submission
+  app.get("/api/flights/:flightnumber?", function(req, res) {
+    console.log("inside apiRoutes, res");
+    let options = {};
+    if (req.params.flightnumber)
+      options = {where: {flightNumber: req.params.flightnumber}};
+    db.FlightStatus.findAll(options).then(function(dbEntry) {
+//      console.log("inside apiRoutes, dbUser: ", dbUser);
+      res.json({ data: dbEntry });
     });
   });
 
-  app.post("/api/user", function(req, res) {
 
-    let user = { //object
+  app.post("/api/entry", function(req, res) {
+    let entry = { //object
       //userID: req.body.userID,
       firstname: req.body.firstname,
       lastname: req.body.lastname,
-      email: req.body.email
+      email: req.body.email,
+      date: req.body.date,
+      airline: req.body.airline,
+      flightNumber: req.body.flightnumber,
+      illnessName: req.body.illness,
+      symptom_name: req.body.symptom
     }
-    console.log("inside apiRoutes, /api/user, req.body: ", req.body)
+    console.log("inside apiRoutes, /api/entry, req.body: ", req.body)
     //breakdown incoming requests into database models
     //check if user already exists by email, grab id, else create new user, grab id
     //find Flight, get flightID
     //insert into submission, get submissionID
     //insert into submissionSymptom
-    db.User.create(user).then(function(dbUser) {
-      res.json(dbUser);
+    db.Entry.create(entry).then(function(dbEntry) {
+      res.json(dbEntry);
+    }).catch(function(error) {
+      console.log("ERROR: apiRoutes: ", error);
     });
   });
 
