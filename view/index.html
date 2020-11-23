@@ -22,10 +22,11 @@
 
 <ul>
 
-  <li><a href="BeWellAbout.html">About</a></li>
-  <li><a href="index.html">Report</a></li>
-  <li><a href="BeWellFrontendResults.html">Flight Data</a></li>
-  <li class = "home"><a href="BeWellHomePage.html">BeWell</a></li>
+    <li><a href="BeWellAbout.html">About</a></li>
+    <li><a href="index.html">Report</a></li>
+    <li><a href="BeWellFrontendResults.html">Flight Data</a></li>
+    <li><a href="BeWellHomePage.html">Search Flight Status</a></li>
+    <li class = "home"><a href="BeWellHomePage.html">BeWell</a></li>
 
 </ul>
 
@@ -60,23 +61,34 @@
           <br>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <select class="mdl-textfield__input" id="airline" name="airline">
-                    <option value="">Select an Airline:</option>
-                    <option value="1">Air New Zealand</option>
-                    <option value="2">Alaska Airlines</option>
-                    <option value="3">American Airlines</option>
-                    <option value="4">Delta Airlines</option>
-                    <option value="5">Frontier Airlines</option>
-                    <option value="6">Jet Blue Airlines</option>
-                    <option value="7">Quantas Airlines</option>
-                    <option value="8">Southwest Airlines</option>
-                    <option value="9">United Airlines</option>
-                    <option value="10">Virgin Atlantic Airlines</option>
+<!--                    <option value="">Select an Airline:</option>-->
+<!--                    <option value="1">Air New Zealand</option>-->
+<!--                    <option value="2">Alaska Airlines</option>-->
+<!--                    <option value="3">American Airlines</option>-->
+<!--                    <option value="4">Delta Airlines</option>-->
+<!--                    <option value="5">Frontier Airlines</option>-->
+<!--                    <option value="6">Jet Blue Airlines</option>-->
+<!--                    <option value="7">Quantas Airlines</option>-->
+<!--                    <option value="8">Southwest Airlines</option>-->
+<!--                    <option value="9">United Airlines</option>-->
+<!--                    <option value="10">Virgin Atlantic Airlines</option>-->
+                  <option value="">Select an Airline:</option>
+                  <option value="Air New Zealand">Air New Zealand</option>
+                  <option value="Alaska Airlines">Alaska Airlines</option>
+                  <option value="American Airlines">American Airlines</option>
+                  <option value="Delta Airlines">Delta Airlines</option>
+                  <option value="Frontier Airlines">Frontier Airlines</option>
+                  <option value="Jet Blue Airlines">Jet Blue Airlines</option>
+                  <option value="Quantas Airlines">Quantas Airlines</option>
+                  <option value="Southwest Airlines">Southwest Airlines</option>
+                  <option value="United Airlines">United Airlines</option>
+                  <option value="Virgin Atlantic Airlines">Virgin Atlantic Airlines</option>
                 </select>
             </div>
 
           <div class="mdl-textfield mdl-js-textfield">
             <input class="mdl-textfield__input" type="text" id="flightnumber">
-            <label class="mdl-textfield__label" for="flightnumber">Flight Number</label>
+            <label class="mdl-textfield__label" for="flightnumber">Flight Number ex: AB1234</label>
           </div>
           <br>
           <div class="form-header">

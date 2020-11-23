@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       data: newEntry,
       success: function(res) {
         console.log("success")
+        window.location.href = "BeWellFrontendResults.html?flightnumber="+$("#flightnumber").val()
       },
       error: function(err) {
         console.log("In entry.js, post, an error occurred: ", err);

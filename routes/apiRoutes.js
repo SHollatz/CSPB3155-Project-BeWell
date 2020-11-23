@@ -10,6 +10,18 @@ module.exports = function(app) {
       res.json(dbEntry);
     });
   });
+  // route to get results based on user submission
+  app.get("/api/flights/:flightnumber?", function(req, res) {
+    console.log("inside apiRoutes, res");
+    let options = {};
+    if (req.params.flightnumber)
+      options = {where: {flightNumber: req.params.flightnumber}};
+    db.FlightStatus.findAll(options).then(function(dbEntry) {
+//      console.log("inside apiRoutes, dbUser: ", dbUser);
+      res.json({ data: dbEntry });
+    });
+  });
+
 
   app.post("/api/entry", function(req, res) {
     let entry = { //object
