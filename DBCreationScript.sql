@@ -74,7 +74,7 @@ CREATE TABLE IF NOT EXISTS Submissions
 );
 
 CREATE TABLE IF NOT EXISTS SubmissionSymptoms
-(submissionSymptonID INTEGER NOT NULL AUTO_INCREMENT
+(submissionSymptomID INTEGER NOT NULL AUTO_INCREMENT
 , submissionID INTEGER NOT NULL
 , symptomID INTEGER NOT NULL
 , PRIMARY KEY (submissionSymptonID)
