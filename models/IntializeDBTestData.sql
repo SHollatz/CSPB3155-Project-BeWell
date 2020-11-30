@@ -29,5 +29,5 @@ id
     end as 'Status'
 , createdAt
 , updatedAt
-from bewell_db.entry
+from Entry
 group by 1, 2, 3;
