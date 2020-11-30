@@ -119,3 +119,10 @@ margin: 15px 5px 0 5px;
     .mdl-data-table th {
     text-align: left !important;
 }
+
+input:invalid {
+
+}
+
+input:invalid:required {
+}

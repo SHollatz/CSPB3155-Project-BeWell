@@ -79,7 +79,7 @@ module.exports = function (sequelize, DataTypes) {
             }
         },
         symptom_name: {
-            type: DataTypes.STRING,
+            type: DataTypes.JSON,
             //allowNull: false,
             validate: {
                 len: {
