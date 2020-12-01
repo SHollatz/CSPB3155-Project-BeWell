@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "root",
-    "password": "P@s5word1!",
-    "database": "bewell_db",
-    "host": "127.0.0.1",
+    "username": "ksom3fyq868rs3au",
+    "password": "i6ar90bcsa32xpr0",
+    "database": "wrj3e9yhg6387ycg",
+    "host": "r1bsyfx4gbowdsis.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": "P@s5word!",
-    "database": "bewell_db",
-    "host": "127.0.0.1",
+    "username": "ksom3fyq868rs3au",
+    "password": "i6ar90bcsa32xpr0",
+    "database": "wrj3e9yhg6387ycg",
+    "host": "r1bsyfx4gbowdsis.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "ksom3fyq868rs3au",
+    "password": "i6ar90bcsa32xpr0",
+    "database": "wrj3e9yhg6387ycg",
+    "host": "r1bsyfx4gbowdsis.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }
