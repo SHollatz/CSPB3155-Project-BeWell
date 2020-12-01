@@ -1,14 +1,14 @@
-// Need to finish mapping from index.html to models/entry.js and view/entry.js
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("submitAnswer").addEventListener('click', event => {
     event.preventDefault()
-    console.log("inside entry.js 1")
+    console.log("inside view/entry.js ")
     //update so it has all the fields on the form
-    let symptoms = []
+    let symptom = [];
     $("input[name='symptom']:checked").each(function ()
     {
-      symptoms.push(parseInt($(this).val()));
+      symptom.push(parseInt($(this).val()));
     }); //jquery to pull checked fields in symptoms
+
     let newEntry = {
       //text entries
       firstname: $("#fname").val(),
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       airline: parseInt($("#airline").val()),
       flightnumber: $("#flightnumber").val(),
       illness: parseInt($('input[name=illness]:checked', '#submissionForm').val()),
-      symptoms: symptoms
+      symptom: symptoms //symptoms.entries()
     }
 
     console.log("newEntry: ", newEntry);
