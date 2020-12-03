@@ -126,3 +126,7 @@ input:invalid {
 
 input:invalid:required {
 }
+
+th {
+  border-right:2px solid #c5c5c575 !important;
+}
