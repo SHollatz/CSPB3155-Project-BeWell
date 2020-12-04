@@ -36,9 +36,9 @@ select id
      , date(`date`) AS flightDate
      , group_concat(distinct illnessName separator ', ') as illnessList
      , case
-           when count(distinct email) > 3 then 'High Risk'
-           when count(distinct email) between 2 and 3 then 'Moderate Risk'
-           else 'Low Risk'
+           when count(distinct email) > 3 then 'High'
+           when count(distinct email) between 2 and 3 then 'Moderate'
+           else 'Low'
     end as 'status'
     , createdAt
     , updatedAt
