@@ -32,7 +32,7 @@ select id
 	 , airline
      , flightNumber
      , date(`date`) AS flightDate
---      , group_concat(distinct illnessName separator ', ') as Illness
+     , group_concat(distinct illnessName separator ', ') as illness
      , case
            when count(distinct email) > 3 then 'High Risk'
            when count(distinct email) between 2 and 3 then 'Moderate Risk'
