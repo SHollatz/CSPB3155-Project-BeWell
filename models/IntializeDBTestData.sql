@@ -5,6 +5,7 @@
 */
 
 USE wrj3e9yhg6387ycg;
+-- use beWell_db;
 DROP TABLE IF EXISTS FlightStatus;
 DROP VIEW IF EXISTS FlightStatus;
 
@@ -24,15 +25,16 @@ VALUES ('Holly', 'Wood', 'holly.wood@email.com', '2020-10-26', 'Delta', 'DL1', '
      , ('John', 'Smith', 'johnsmith1@email.com', '2020-10-26', 'Delta', 'DL1', 'COVID-19', 'Fever', '2020-11-04 20:37:34', '2020-11-04 20:37:34')
      , ('John', 'Smith', 'johnsmith2@email.com', '2020-10-26', 'Delta', 'DL1', 'COVID-19', 'Fever', '2020-11-04 20:37:34', '2020-11-04 20:37:34')
      , ('John', 'Smith', 'johnsmith3@email.com', '2020-10-26', 'Delta', 'DL1', 'COVID-19', 'Fever', '2020-11-04 20:37:34', '2020-11-04 20:37:34')
-     , ('Jane', 'Doe', 'janedoe1@email.com', '2020-11-05', 'Alaska', 'AA1733', 'Other', 'Fever', '2020-11-04 20:37:34', '2020-11-04 20:37:34');
-
+     , ('Jane', 'Doe', 'janedoe1@email.com', '2020-11-05', 'Alaska', 'AA1733', 'Other', 'Fever', '2020-11-04 20:37:34', '2020-11-04 20:37:34')
+	 , ('John', 'Smith', 'johnsmith4@email.com', '2020-10-26', 'Delta', 'DL1', 'Influenza-B', 'Fever', '2020-11-04 20:37:34', '2020-11-04 20:37:34')
+     , ('Jane', 'Doe', 'janedoe2@email.com', '2020-11-05', 'Alaska', 'AA1733', 'COVID-19', 'Fever', '2020-11-04 20:37:34', '2020-11-04 20:37:34');
 create view FlightStatus
 as
 select id
 	 , airline
      , flightNumber
      , date(`date`) AS flightDate
-     , group_concat(distinct illnessName separator ', ') as illness
+     , group_concat(distinct illnessName separator ', ') as illnessList
      , case
            when count(distinct email) > 3 then 'High Risk'
            when count(distinct email) between 2 and 3 then 'Moderate Risk'

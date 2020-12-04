@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
                  { data: 'airline' },
                  { data: 'flightNumber' },
                  { data: 'flightDate' },
-                 { data: 'illness'},
+                 { data: 'illnessList' },
                  { data: 'status' }
              ]
          } );
