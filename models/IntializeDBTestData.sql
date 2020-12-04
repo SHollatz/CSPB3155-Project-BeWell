@@ -4,7 +4,7 @@
 3.  Run Script in MySQL workbench.
 */
 
-USE bewell_db;
+USE wrj3e9yhg6387ycg;
 DROP TABLE IF EXISTS FlightStatus;
 DROP VIEW IF EXISTS FlightStatus;
 
@@ -28,15 +28,19 @@ VALUES ('Holly', 'Wood', 'holly.wood@email.com', '2020-10-26', 'Delta', 'DL1', '
 
 create view FlightStatus
 as
-select airline
+select id
+	 , airline
      , flightNumber
      , date(`date`) AS flightDate
+--      , group_concat(distinct illnessName separator ', ') as Illness
      , case
-           when count(distinct email) > 3 then 'Red'
-           when count(distinct email) between 2 and 3 then 'Yellow'
-           else 'Green'
-    end as 'Status'
+           when count(distinct email) > 3 then 'High Risk'
+           when count(distinct email) between 2 and 3 then 'Moderate Risk'
+           else 'Low Risk'
+    end as 'status'
     , createdAt
     , updatedAt
 from Entry
-group by 1, 2, 3;
+group by 2, 3, 4;
+
+
