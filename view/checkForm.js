@@ -38,4 +38,4 @@ const functions = {
 	checkTextInput: checkTextInput
 }
 
-module.exports = functions
+//module.exports = functions

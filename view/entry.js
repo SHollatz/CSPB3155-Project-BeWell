@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       airline: parseInt($("#airline").val()),
       flightnumber: $("#flightnumber").val(),
       illness: parseInt($('input[name=illness]:checked', '#submissionForm').val()),
-      symptom: symptoms //symptoms.entries()
+      symptom: symptom //symptoms.entries()
     }
 
     console.log("newEntry: ", newEntry);
