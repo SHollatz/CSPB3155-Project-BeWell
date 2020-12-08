@@ -20,3 +20,7 @@ Link will go here
 ## Deployment Link
 
 [Deployed App](https://bewellcspb3308.herokuapp.com/)
+
+## Presentation Link
+
+[Presentation Link](https://docs.google.com/presentation/d/1nUki7dPRnV5aRA67sEv2gZUxQZYIs7Au-T6Jrp8Kjwg/edit?usp=sharing)
