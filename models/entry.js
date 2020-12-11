@@ -1,3 +1,5 @@
+"Author: Sabine Hollatz"
+
 module.exports = function (sequelize, DataTypes) {
     let Entry = sequelize.define("Entry", {
         firstname: {

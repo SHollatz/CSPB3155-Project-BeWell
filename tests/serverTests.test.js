@@ -1,3 +1,5 @@
+"Author: Sabine Hollatz"
+
 const request = require('request');
 
 describe("Test landing page for OK response", () => {

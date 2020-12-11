@@ -1,3 +1,5 @@
+"Author: Sabine Hollatz"
+
 document.addEventListener("DOMContentLoaded", function () {
      window.onload = (event) => {
          let urlParams = new URLSearchParams(window.location.search.toLowerCase());
