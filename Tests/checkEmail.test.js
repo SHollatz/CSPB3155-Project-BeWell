@@ -1,3 +1,5 @@
+//authors: Julie Kirkpatrick
+
 const functions = require('../view/checkForm');
 
 
