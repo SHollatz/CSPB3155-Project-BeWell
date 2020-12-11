@@ -1,3 +1,4 @@
+"Author: Sabine Hollatz"
 
 var db = require("../models");
 //console.log("inside apiRoutes, db: ", db);
@@ -102,7 +103,6 @@ module.exports = function(app) {
       console.log("ERROR: apiRoutes: ", error);
     });
   });
-
 };
 //Route that pulls back illnesses, symptom, flights, list of aggregated submissions
 //each table gets it's own route/uri - one get from db and one post to write to db
