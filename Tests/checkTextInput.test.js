@@ -1,6 +1,11 @@
+/*
+authors: Julie Kirkpatrick
+purpose:to test validation the email input on the report page
+*/
+
 const functions = require('../view/checkForm');
 
-//true tests
+//true first name tests
 
 test('Julie is an name', () => {
   expect(functions.checkTextInput("Julie")).toBe(true); 
@@ -15,7 +20,7 @@ test('Mr. Clown is a name (I guess)', () => {
 });
 
 
-//false test
+//false first name test
 test("7 isn't an name", () => {
   expect(functions.checkTextInput('7')).toBe(false);
 });
