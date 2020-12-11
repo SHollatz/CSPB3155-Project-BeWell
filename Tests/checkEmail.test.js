@@ -1,11 +1,13 @@
-//authors: Julie Kirkpatrick
-
+/*
+authors: Julie Kirkpatrick
+purpose:to test validation the email input on the report page
+*/
 const functions = require('../view/checkForm');
 
 
 //example emails from https://gist.github.com/cjaoude/fd9910626629b53c4d25
 
-//true tests
+//true email tests
 
 test('email@example.com is an email', () => {
   expect(functions.checkEmail('email@example.com')).toBe(true);
@@ -67,7 +69,7 @@ test('firstname-lastname@example.com', () => {
 });
 
 
-//false tests
+//false email tests
 test('plainaddress', () => {
   expect(functions.checkEmail('plainaddress')).toBe(false);
 });
