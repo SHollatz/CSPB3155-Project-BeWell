@@ -1,3 +1,7 @@
+/**Authors: Amanda Killeen, Sabine Hollatz
+ * Adds user submission to entry table
+ */
+
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("submitAnswer").addEventListener('click', event => {
     event.preventDefault()

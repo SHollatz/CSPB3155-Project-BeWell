@@ -1,3 +1,7 @@
+/**Author: Amanda Killen
+ * Creates Flight Status table as a placeholder for DataTables view utilizing Sequelize ORM
+ */
+
 module.exports = function (sequelize, DataTypes) {
     let FlightStatus = sequelize.define("FlightStatus", {
 

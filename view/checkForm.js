@@ -1,4 +1,4 @@
-/*
+/**
 authors: Julie Kirkpatrick
 purpose:field validation on the report page on the report page
 */

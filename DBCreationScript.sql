@@ -1,3 +1,7 @@
+/**Author: Amanda Killeen
+* original database creation script
+*/
+
 CREATE DATABASE IF NOT EXISTS bewell_db;
 
 USE bewell_db;

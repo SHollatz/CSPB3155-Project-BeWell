@@ -1,4 +1,6 @@
-"Author: Sabine Hollatz"
+/**Author: Sabine Hollatz
+ * Creates Entry table utilizing Sequelize ORM
+ */
 
 module.exports = function (sequelize, DataTypes) {
     let Entry = sequelize.define("Entry", {

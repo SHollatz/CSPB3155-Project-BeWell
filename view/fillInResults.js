@@ -1,4 +1,6 @@
-"Author: Sabine Hollatz"
+/**Author: Sabine Hollatz, Amanda Killeen
+ * Script to populate DataTables api with reporting data
+ * */
 
 document.addEventListener("DOMContentLoaded", function () {
      window.onload = (event) => {

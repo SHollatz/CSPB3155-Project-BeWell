@@ -1,3 +1,7 @@
+/**Author: Amanda Killeen
+ * Purpose: Testing of Sequelize table creation
+ */
+
 var db = require("../models");
 
 insertData = async () =>  {

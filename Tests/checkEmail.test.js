@@ -1,4 +1,4 @@
-/*
+/**
 authors: Julie Kirkpatrick
 purpose:to test validation the email input on the report page
 */

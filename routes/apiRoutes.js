@@ -1,4 +1,6 @@
-"Author: Sabine Hollatz"
+/**Author: Sabine Hollatz
+ * Contributors: Amanda Killeen, Tony Pearo
+ * */
 
 var db = require("../models");
 //console.log("inside apiRoutes, db: ", db);
@@ -11,7 +13,7 @@ module.exports = function(app) {
       res.json(dbEntry);
     });
   });
-  // route to get results based on user submission
+  /** route to get results based on user submission*/
   app.get("/api/flights/:flightnumber?", function(req, res) {
     console.log("inside apiRoutes, res");
     let options = {};
@@ -25,7 +27,7 @@ module.exports = function(app) {
 
 
   app.post("/api/entry", function(req, res) {
-    //catch airline number and convert to string
+    /**catch airline number and convert to string*/
     var airline = req.body.airline.valueOf();
     var airlineName = "";
     switch (airline) {
@@ -61,7 +63,7 @@ module.exports = function(app) {
         break;
     }
 
-    //catch illness radio and convert to string illness name
+    /**catch illness radio and convert to string illness name*/
     var illness = req.body.illness;
     var illnessName = "";
     switch (illness) {

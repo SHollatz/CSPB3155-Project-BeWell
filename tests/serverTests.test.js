@@ -1,4 +1,4 @@
-"Author: Sabine Hollatz"
+/**Author: Sabine Hollatz*/
 
 const request = require('request');
 

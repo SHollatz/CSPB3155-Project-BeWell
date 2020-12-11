@@ -1,4 +1,4 @@
-"Author: Sabine Hollatz"
+/**Author: Sabine Hollatz*/
 
 require("dotenv").config();
 var express = require("express");

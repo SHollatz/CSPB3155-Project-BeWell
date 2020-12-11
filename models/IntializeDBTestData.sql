@@ -1,3 +1,7 @@
+/** Author: Amanda Killeen
+  * Seed file for database.
+*/
+
 /*
 1.  Run 'npm install' in the directory on the CLI
 2.  Start the server 'node server.js'
